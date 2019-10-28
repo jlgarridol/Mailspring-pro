@@ -64,7 +64,8 @@ class _IdentityStore extends MailspringStore {
   }
 
   hasProFeatures() {
-    return this._identity && this._identity.stripePlanEffective !== 'Basic';
+    return true;
+    //return this._identity && this._identity.stripePlanEffective !== 'Basic';
   }
 
   _fetchAndPollRemoteIdentity() {
@@ -84,6 +85,9 @@ class _IdentityStore extends MailspringStore {
       AppEnv.config.set('identity', null);
       return;
     }
+    //Always pro
+    identity.stripePlan = "PRO";
+    identity.stripePlanEffective = "PRO";
 
     const { token, ...rest } = identity;
 
