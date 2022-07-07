@@ -42,7 +42,7 @@
     "lru-cache": "^4.0.1",
     "mammoth": "1.4.7",
     "mkdirp": "^0.5",
-    "moment": "^2.24.0",
+    "moment": "^2.29.4",
     "moment-round": "^1.0.1",
     "moment-timezone": "0.5.4",
     "mousetrap": "^1.5.3",
